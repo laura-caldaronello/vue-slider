@@ -18,7 +18,7 @@
             <i @click="goRight" class="fas fa-angle-right"></i>
         </div>
         <div id="lower-container">
-
+            <i @click="choose" :class="fill[(counter == number) * 1]" class="fa-circle" v-for="number in maxCounter"></i> <!-- mi baso sul fatto che true * 1 = 1, mentre false * 1 = 0 -->
         </div>
     </div>
 
