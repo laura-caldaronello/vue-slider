@@ -15,5 +15,10 @@ var app = new Vue({
         goRight: function() {
             (this.counter == this.maxCounter) ? (this.counter = this.minCounter) : this.counter++;
         },
+    },
+    created: function() {
+        setInterval(() => {
+            this.goRight();
+        },3000);
     }
 });
